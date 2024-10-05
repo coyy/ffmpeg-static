@@ -31,7 +31,7 @@ mkdir -p ../bin
 
 download () {
 	# todo: use https://gist.github.com/derhuerst/745cf09fe5f3ea2569948dd215bbfe1a ?
-	curl -f -L -# --compressed -A 'https://github.com/coyy/ffmpeg-static binaries download script' -o "$2" "$1"
+	curl -f -L -# --compressed -o "$2" "$1"
 }
 
 set -x # todo: remove
@@ -113,9 +113,9 @@ curl -fsSL 'https://evermeet.cx/ffmpeg/info/ffmpeg/release' | jq --tab '.' >../b
 # todo: pull ffprobe README?
 
 echo 'darwin arm64'
-echo '  downloading from osxexperts.net'
-download 'https://www.osxexperts.net/ffmpeg6arm.zip' ffmpeg-darwin-arm64.zip
-download 'https://www.osxexperts.net/ffprobe6arm.zip' ffprobe-darwin-arm64.zip
+echo '  downloading from martin-riedl.de'
+download 'https://ffmpeg.martin-riedl.de/download/macos/arm64/1726073313_7.0.2/ffmpeg.zip' ffmpeg-darwin-arm64.zip
+download 'https://ffmpeg.martin-riedl.de/download/macos/arm64/1726073313_7.0.2/ffprobe.zip' ffprobe-darwin-arm64.zip
 echo '  extracting'
 unzip -o -d ../bin -j ffmpeg-darwin-arm64.zip ffmpeg
 unzip -o -d ../bin -j ffprobe-darwin-arm64.zip ffprobe

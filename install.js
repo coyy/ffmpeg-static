@@ -171,7 +171,7 @@ const downloadsUrl = (
   'https://github.com/coyy/ffmpeg-static/releases/download'
 )
 const baseUrl = `${downloadsUrl}/${release}`
-const downloadUrl = `${baseUrl}/${executableBaseName}-${platform}-${arch}.gz`
+const downloadUrl = `${baseUrl}/${executableBaseName}-${platform}-${arch}`
 const readmeUrl = `${baseUrl}/${platform}-${arch}.README`
 const licenseUrl = `${baseUrl}/${platform}-${arch}.LICENSE`
 
