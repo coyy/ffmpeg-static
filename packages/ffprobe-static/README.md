@@ -2,7 +2,7 @@
 
 Static **ffprobe (from the [ffmpeg](https://ffmpeg.org) project) binaries for macOS, Linux, Windows.**
 
-Supports macOS (64-bit and arm64), Linux (32 and 64-bit, armhf, arm64), Windows (32 and 64-bit). [The ffmpeg version currently used is `6.0`.](https://github.com/eugeneware/ffprobe-static/releases/tag/b6.0)
+Supports macOS (64-bit and arm64), Linux (32 and 64-bit, armhf, arm64), Windows (32 and 64-bit). [The ffmpeg version currently used is `6.0`.](https://github.com/coyy/ffprobe-static/releases/tag/b6.0)
 
 [![npm version](https://img.shields.io/npm/v/ffprobe-static.svg)](https://www.npmjs.com/package/ffprobe-static)
 ![minimum Node.js version](https://img.shields.io/node/v/ffprobe-static.svg)
@@ -15,11 +15,11 @@ Supports macOS (64-bit and arm64), Linux (32 and 64-bit, armhf, arm64), Windows 
 $ npm install ffprobe-static
 ```
 
-*Note:* During installation, it will download the appropriate `ffprobe` binary from the [`b6.0` GitHub release](https://github.com/eugeneware/ffprobe-static/releases/tag/b6.0). Use and distribution of the binary releases of `ffprobe` are covered by their respective license.
+*Note:* During installation, it will download the appropriate `ffprobe` binary from the [`b6.0` GitHub release](https://github.com/coyy/ffprobe-static/releases/tag/b6.0). Use and distribution of the binary releases of `ffprobe` are covered by their respective license.
 
 ### Custom binaries url
 
-By default, the `ffprobe` binary will get downloaded from `https://github.com/eugeneware/ffprobe-static/releases/download`. To customise this, e.g. when using a mirror, set the `FFPROBE_BINARIES_URL` environment variable.
+By default, the `ffprobe` binary will get downloaded from `https://github.com/coyy/ffprobe-static/releases/download`. To customise this, e.g. when using a mirror, set the `FFPROBE_BINARIES_URL` environment variable.
 
 ```shell
 export FFPROBE_BINARIES_URL=https://cdn.npmmirror.com/binaries/ffprobe-static
@@ -28,7 +28,7 @@ npm install ffprobe-static
 
 ### Electron & other cross-platform packaging tools
 
-Because `ffprobe-static` will download a binary specific to the OS/platform, you need to purge `node_modules` before (re-)packaging your app *for a different OS/platform* ([read more in #35](https://github.com/eugeneware/ffprobe-static/issues/35#issuecomment-630225392)).
+Because `ffprobe-static` will download a binary specific to the OS/platform, you need to purge `node_modules` before (re-)packaging your app *for a different OS/platform* ([read more in #35](https://github.com/coyy/ffprobe-static/issues/35#issuecomment-630225392)).
 
 ## Example Usage
 
